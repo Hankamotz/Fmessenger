@@ -1,0 +1,15 @@
+{
+    "architecture": "all",
+    "description": "facebook messenger webapp",
+    "framework": "ubuntu-sdk-15.04.4",
+    "hooks": {
+        "fmessenger": {
+            "apparmor": "app.json",
+            "desktop": "app.desktop"
+        }
+    },
+    "maintainer": "Andima Landaluze <andimalo@hotmail.es>",
+    "name": "fmessenger.hankamotz",
+    "title": "fmessenger",
+    "version": "0.1"
+}
