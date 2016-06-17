@@ -8,10 +8,17 @@ Item {
 
     property int hintSize: units.gu(8)
     property color hintColor: Theme.palette.normal.overlay
-    property string hintIconName: "view-grid-symbolic"
+    property string hintIconName: "go-up"
     property alias hintIconSource: hintIcon.source
     property color hintIconColor: UbuntuColors.coolGrey
     property bool bottomEdgeEnabled: true
+
+    property real expandedPosition: 0.6 * height
+    property real collapsedPosition: height - hintSize/2
+
+    property list<RadialAction> actions
+    property real actionButtonSize: units.gu(7)
+    property real actionButtonDistance: 1.5* hintSize
 
     property real expandedPosition: 0.6 * height
     property real collapsedPosition: height - hintSize/2
