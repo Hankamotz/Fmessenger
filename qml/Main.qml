@@ -124,12 +124,12 @@ MainView {
             visible: true
             actions: [
                 RadialAction {
-                    id: reload
-                    iconName: "reload"
+                    iconSource: "../icons/icon.svg"
+                    iconName: "icon"
                     onTriggered: {
-                        webview.reload()
+                        webview.url = 'https://www.messenger.com/'
                     }
-                    text: qsTr("Reload")
+                    text: qsTr("Messenger")
                 },
                 RadialAction {
                     id: forward
@@ -140,6 +140,14 @@ MainView {
                     }
                    text: qsTr("Forward")
                  },
+                 RadialAction {
+                    iconSource: "../icons/facebook.svg"
+                    iconName: "facebook"
+                    onTriggered: {
+                        webview.url = 'https://www.facebook.com/'
+                    }
+                    text: qsTr("Facebook")
+                },
                 RadialAction {
                     id: back
                     enabled: webview.canGoBack
@@ -149,6 +157,7 @@ MainView {
                     }
                     text: qsTr("Back")
                 }
+               
             ]
         } 
     
