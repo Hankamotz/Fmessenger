@@ -1,5 +1,4 @@
 Fmessenger
-https://uappexplorer.com/app/fmessenger.hankamotz
 
 Yet another web based Facebook Messenger app.
 
@@ -20,3 +19,45 @@ This app uses a modified version of Facebook Messenger style (https://userstyles
 This app uses Ogra's webapp container.
 
 There are some bugs i try to fix soon.
+
+
+=====================CHANGELOT==========================
+
+--------------------VERSION 0.6.1-----------------------
+
+-Fixed settings menu issue.
+
+---------------------VERSION 0.6------------------------
+
+-New static layout.
+
+-Simplified appearance: Moved and rescaled some items, removed redundant ones.
+
+-Fixed text size in links.
+
+-Fixed keyboard isuue.
+
+---------------------VERSION 0.5------------------------
+
+-Improved interaction between Messenger and Facebook.
+
+---------------------VERSION 0.4------------------------
+
+-Resized and moved some elements: login screen, contact list...
+
+---------------------VERSION 0.3------------------------
+
+-Bigger text size in text area and status.
+
+-Bigger contact list area.
+
+---------------------VERSION 0.2------------------------
+
+-Removed some unnecesary elements.
+
+-Bigger size for stickers, photos and gifs. 
+
+---------------------VERSION 0.1------------------------
+
+-First release.
+ 
