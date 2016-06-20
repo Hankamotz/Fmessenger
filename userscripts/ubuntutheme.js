@@ -1,14 +1,6 @@
-// ==UserScript==
-// @name          Facebook Messanger Nice, Tidy and more responsive
-// @namespace     http://userstyles.org
-// @description	  Simple CSS that hides left toolbar from new Facebook Messenger (and open it on hover) and allow to make new chat a lot smaller
-// @author        Krzychu
-// @homepage      https://userstyles.org/styles/112567
-// @include       https://www.messenger.com/*
-// @include       http://www.messenger.com/*
-// @run-at        document-start
-// @version       0.20150418220911
-// ==/UserScript==
+
+// modified script based on Facebook Messanger Nice, Tidy and more responsive by Krzychu https://userstyles.org/styles/112567
+
 (function() {var css = [ "* {\nfont-family: \"Ubuntu\" !important;\nfont-size: 16pt !important; \nline-height: 1 !important}",
         " ",
         "._1enh {",	
@@ -150,10 +142,6 @@
         "._fl3 {",
         "  transform: scale(2.2) !important;",  
         "}",
-        "",
-        "._4rv6 {",
-        "  transform: scale(2.2) !important;",  
-        "}",
          "",
         "._4rv7 {",
         "  transform: scale(2.2) !important;",  
@@ -165,11 +153,6 @@
         "",
         "._yht {",
         "  transform: scale(2.2) !important;",  
-        "}",
-        "",
-        "._5s2p {",
-        "  width: 0px !important;",
-        "  margin-right: 0px !important;",  
         "}",
         "",
         ".uiContextualLayer {",
@@ -218,22 +201,38 @@
         "",
         "._1tqi {",
         "  font-size: 1pt !important;", 
-         "  opacity: 0 !important;",
+        "  opacity: 0 !important;",
         "}",
         "",
         "._2v6o {",
         "  font-size: 24pt !important;", 
         "}",
+
+//full text area
+        "",
+        "._4rv3 {",
+	" height: 240px !important;", 
+        "}",
+        "",
+        "._5irm {",
+        "  width: 500px !important;",
+        "  height: 80px !important;",
+        "  transform: translate(0px,40px);",
+        "}",
+//write new text message
         "",
         "._1p1v {",
-        "  font-size: 34pt !important;", 
+        "  padding-left: 10px !important;",
         "}",
+//text area
         "",
-        "._5rpu {",
+        "._kmc {",
         "  transform: scale(2) !important;",
-        "  padding-left: 90px !important;", 
-        "  padding-top: 20px !important;", 
+        "  padding-left: 90px !important;",
+        "  border-radius: 10px  !important;",
+        "  background-color: #EEEEEE !important;",
         "}",
+//text
         "",
         "._3oh- {",
         "  font-size: 34pt !important;", 
@@ -242,26 +241,36 @@
         "._hh7 a {",
         "  font-size: 34pt !important;", 
         "}",
+//emoji
         "",
         "._2560 {",
         "  transform: scale(2.2) !important;", 
         "}",
-        "",
-        "._4rv4 li {",
-	"  margin-right: 40px !important;",
-        "}",
+//area: photos upload, stickers, emoji, gifs
         "",
         "._4rv4 {",
-	" height: 100px !important;",
-        "  transform: translate(0px, 100px);",
+        "  min-width: 160px !important;",
+        "  width: 160px !important;",
+	"  height: 160px !important;",
+        "  transform: translate(240px, -40px);",
         "}",
         "",
-        "._4rv3 {",
-	" height: 200px !important;", 
+        "._4rv4 li {",
+	"  margin-right: 30px !important;",
+        "  margin-top: 20px !important;",
         "}",
+//stickers
         "",
-        "._kmc {",
-	"  width: 200px !important;", 
+        "._4rv6 {",
+        "  transform: scale(2.2) !important;",  
+        "  margin-left: 30px !important;",
+        "}",
+//native emoji button
+        "",
+        "._5s2p {",
+        "  width: 0px !important;",
+        "  pading-right: 0px !important;",
+        "  margin-right: 0px !important;",  
         "}",
         "",
         "._58al {",
@@ -294,4 +303,3 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
-
