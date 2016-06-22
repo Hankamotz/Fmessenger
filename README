@@ -23,6 +23,10 @@ There are some bugs i try to fix soon.
 
 =====================CHANGELOT==========================
 
+--------------------VERSION 0.7.1-----------------------
+
+-limit css script to affect only messenger; now, style modifications don’t affect to facebook.
+
 --------------------VERSION 0.7-------------------------
 
 -Text area redesigned.
