@@ -1,6 +1,14 @@
-
-// modified script based on Facebook Messanger Nice, Tidy and more responsive by Krzychu https://userstyles.org/styles/112567
-
+// ==UserScript==
+// @name          Facebook Messanger Nice, Tidy and more responsive
+// @namespace     http://userstyles.org
+// @description	  Simple CSS that hides left toolbar from new Facebook Messenger (and open it on hover) and allow to make new chat a lot smaller
+// @author        Krzychu
+// @homepage      https://userstyles.org/styles/112567
+// @include       https://www.messenger.com/*
+// @include       http://www.messenger.com/*
+// @run-at        document-start
+// @version       0.20150418220911
+// ==/UserScript==
 (function() {var css = [ "* {\nfont-family: \"Ubuntu\" !important;\nfont-size: 16pt !important; \nline-height: 1 !important}",
         " ",
         "._1enh {",	
