@@ -260,19 +260,36 @@
         "  min-width: 160px !important;",
         "  width: 160px !important;",
 	"  height: 160px !important;",
-        "  transform: translate(240px, -40px);",
+        "  transform: translate(200px, -20px);",
         "}",
         "",
         "._4rv4 li {",
 	"  margin-right: 30px !important;",
         "  margin-top: 20px !important;",
-        "}",
+        "}"
+//gifs
+       "",
+       "._yht {",
+       "  margin-left: 30px !important;",
+       "}",
 //stickers
         "",
         "._4rv6 {",
         "  transform: scale(2.2) !important;",  
         "  margin-left: 30px !important;",
         "}",
+//selected chat emoji
+       "",
+       "._4rv9 {",
+       "  margin-top: 30px !important;",
+       "}",
+//send button
+       "",
+       "._38lh {",
+       "  transform: scale(1.8) !important;",
+       "  margin-top: 36px !important;",
+       "  margin-left: 20px !important;",
+       "}",
 //native emoji button
         "",
         "._5s2p {",
