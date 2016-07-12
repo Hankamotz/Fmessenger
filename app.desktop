@@ -5,7 +5,6 @@ Icon=fmessenger.png
 Exec=qmlscene %u qml/Main.qml
 Terminal=false
 X-Ubuntu-Touch=true
-X-Ubuntu-Splash-Image=fmessenger-splash.png
 X-Ubuntu-Splash-Color=white
 X-Ubuntu-Supported-Orientations=portrait
 
