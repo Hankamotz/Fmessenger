@@ -146,11 +146,18 @@
         "._31tl {",
         "  transform: scale(2.2) !important;",  
         "}",
+//call, video call
         "",
-        "._fl3 {",
+        "._fl2 a {",
         "  transform: scale(2.2) !important;",  
         "}",
-         "",
+//attach image
+        "",
+        "._vzk {",
+        "  transform: scale(2.2) !important;",  
+        "}",
+//record audio
+        "",
         "._4rv7 {",
         "  transform: scale(2.2) !important;",  
         "}",
@@ -182,10 +189,7 @@
         "  font-size: 14pt !important;", 
         "  margin-left: 20px !important;",
         "}",
-        "",
-        "._vzk {",
-        "  transform: scale(2.2) !important;",  
-        "}",
+
         "",
         "._2oc8 {",
         "  margin-top: 20px !important;",
@@ -257,6 +261,7 @@
 //area: photos upload, stickers, emoji, gifs
         "",
         "._4rv4 {",
+        "  display: block !important;",
         "  min-width: 160px !important;",
         "  width: 160px !important;",
 	"  height: 160px !important;",
@@ -266,7 +271,7 @@
         "._4rv4 li {",
 	"  margin-right: 30px !important;",
         "  margin-top: 20px !important;",
-        "}"
+        "}",
 //gifs
        "",
        "._yht {",
@@ -328,3 +333,4 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
+
