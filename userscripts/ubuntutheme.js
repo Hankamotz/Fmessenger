@@ -151,11 +151,7 @@
         "._fl2 a {",
         "  transform: scale(2.2) !important;",  
         "}",
-//attach image
-        "",
-        "._vzk {",
-        "  transform: scale(2.2) !important;",  
-        "}",
+
 //record audio
         "",
         "._4rv7 {",
@@ -263,25 +259,36 @@
         "._4rv4 {",
         "  display: block !important;",
         "  min-width: 160px !important;",
-        "  width: 160px !important;",
+        "  width: 180px !important;",
 	"  height: 160px !important;",
-        "  transform: translate(200px, -20px);",
+        "  transform: translate(200px, -20px);",       
         "}",
         "",
         "._4rv4 li {",
-	"  margin-right: 30px !important;",
         "  margin-top: 20px !important;",
         "}",
-//gifs
-       "",
-       "._yht {",
-       "  margin-left: 30px !important;",
-       "}",
+//attach image
+        "",
+        "._vzk {",
+        "  transform: scale(2.2) !important;",  
+        "}",
 //stickers
         "",
         "._4rv6 {",
         "  transform: scale(2.2) !important;",  
-        "  margin-left: 30px !important;",
+        "  margin-left: 16px !important;",
+        "}",
+//gifs
+       "",
+       "._yht {",     
+       "  margin-left: 24px !important;",
+       "}",
+//micro
+        "",
+        "._4rv7 {",          
+        "  width: 0px !important;",
+        "  pading-right: 0px !important;",
+        "  margin: 0px 0px 0px 0px !important;",  
         "}",
 //selected chat emoji
        "",
@@ -301,6 +308,13 @@
         "  width: 0px !important;",
         "  pading-right: 0px !important;",
         "  margin-right: 0px !important;",  
+        "}",
+//camera button
+        "",
+        "._4rv5 {",
+        "  width: 0px !important;",
+        "  pading-right: 0px !important;",
+        "  margin: 0px 0px 0px 0px !important;",  
         "}",
         "",
         "._58al {",
@@ -333,4 +347,3 @@ if (typeof GM_addStyle != "undefined") {
 	}
 }
 })();
-
