@@ -51,7 +51,7 @@ import Ubuntu.Components 1.3
             }
             id: label
             objectName: "label"
-            text: i18n.tr("Fmessenger v.0.8")
+            text: i18n.tr("Fmessenger v.0.8.1")
         }
         Label {
             anchors {
