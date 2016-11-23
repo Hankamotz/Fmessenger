@@ -19,29 +19,72 @@ import com.canonical.Oxide 1.0 as Oxide
             }
 
             leadingActionBar {
-                           numberOfSlots: 1
+                           numberOfSlots:3
                            actions: [
+
                                Action {
-                                   id: actionSettings
-                                   iconName: "back"
-                                   text: i18n.tr("Back")
-                                   onTriggered: {
-                                                           onClicked: mainPageStack.pop(pageDesktop)
+                                   id: actionForward
+                                   iconName: "go-next"
+                                   text: i18n.tr("Forward")
+                                   onTriggered:  {
+                                       webview.goForward()
+                                   }
+                                    },
+
+                                  Action {
+                                   id: actionRestore
+                                   iconSource: "icon.svg"
+                                                       iconName: "icon"
+                                                       onTriggered: {
+                                                           webview.url = 'https://www.messenger.com/'
                                                        }
-                               }
+                                                       text: qsTr("Messenger")
+                                                   },
+                                   Action {
+                                       id: actionBack
+                                       iconName: "go-previous"
+                                       text: i18n.tr("Back")
+                                       onTriggered: {
+                                           webview.goBack()
+                                       }
+                                   }
                            ]
                        }
             trailingActionBar {
-                           numberOfSlots: 1
-                           actions: [
-                               Action {
-                                   id: actionDesktopone
-                                   iconName: "computer-symbolic"
-                                   text: i18n.tr("Desktop view")
-                                  onTriggered:  webview.reload()
-                                    }
-                           ]
-                       }
+                                                  numberOfSlots: 3
+                                                  actions: [
+                                                      Action {
+                                                          id: actionfacebook
+                                                          iconName: "facebook-symbolic"
+                                                          onTriggered: {
+                                                                                 webview.url = 'https://www.facebook.com/'
+                                                                             }
+                                                           },
+                                                      Action {
+                                                          id: actionDesktopone
+                                                          iconName: "computer-symbolic"
+                                                          text: i18n.tr("Desktop view")
+
+                                                           },
+                                                      Action {
+                                                          id: actionPhone
+                                                          iconName: "phone-smartphone-symbolic"
+                                                          text: i18n.tr("Phone view")
+                                                          onTriggered: {
+                                                                            onClicked: mainPageStack.pop(pageDesktop)
+                                                                        }
+                                                           },
+                                                      Action {
+                                                          id: actionAbout
+                                                          iconName: "info"
+                                                          text: i18n.tr("About")
+                                                          onTriggered:  mainPageStack.push(Qt.resolvedUrl("About.qml"))
+                                                           }
+
+
+
+                                                  ]
+                                              }
         }
 
         WebContext {
