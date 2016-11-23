@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Fmessenger
+Type=Application
+Icon=fmessenger.png
+Exec=qmlscene %U Main.qml
+Terminal=false
+X-Ubuntu-Touch=true
+X-Ubuntu-Splash-Image=icon.png
+X-Ubuntu-Splash-Color=#0084FF
+X-Ubuntu-Supported-Orientations=portrait
+
