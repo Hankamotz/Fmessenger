@@ -2,7 +2,7 @@ Fmessenger
 
 Yet another web based Facebook Messenger app.
 
-Fmessenger aims to give a better integration of Facebook Messenger in Ubuntu Touch phones. Provides acces to www.messenger.com website in desktop mode adapting style to make more phone friendly, hiding left toolbar and allowing to make chat wider. 
+Fmessenger aims to give a better integration of Facebook Messenger in Ubuntu Touch phones. Provides acces to www.messenger.com website in desktop mode adapting style to make more friendly. 
 
 With Fmessenger you can:
 -Search and chat with your contacts
@@ -12,16 +12,18 @@ With Fmessenger you can't:
 -Receive notifications
 -Make/receive video calls/audio  messages
 
-Text look very big in bigger screens like tablets, so consider install Messenger webapp made by Davide Franzino (https://uappexplorer.com/app/messenger.vocoderism) in these devices. 
-
 This app uses a modified version of Facebook Messenger style (https://userstyles.org/styles/112567) made by Krzychu and licensed under Creative Commons-Atribution-Non Comercial-Share Alike license. 
-
-This app uses Ogra's webapp container.
-
-There are some bugs i try to fix soon.
 
 
 =====================CHANGELOT==========================
+
+--------------------VERSION 0.8 ------------------------
+
+-New icon
+-New splash screen
+-Added header
+-Removed bottom menu
+-Added tablet and desktop views
 
 --------------------VERSION 0.7.5-----------------------
 
