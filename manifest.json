@@ -4,12 +4,12 @@
     "framework": "ubuntu-sdk-15.04.4",
     "hooks": {
         "fmessenger": {
-            "apparmor": "app.json",
-            "desktop": "app.desktop"
+            "apparmor": "fmessenger.apparmor",
+            "desktop": "fmessenger.desktop"
         }
     },
     "maintainer": "Andima Landaluze <andimalo@hotmail.es>",
     "name": "fmessenger.hankamotz",
     "title": "fmessenger",
-    "version": "0.7.3"
+    "version": "0.8"
 }
