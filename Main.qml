@@ -35,21 +35,54 @@ MainView {
                 backgroundColor: "#0084FF"
 
             }
+            leadingActionBar {
+                           numberOfSlots:3
+                           actions: [
+
+                               Action {
+                                   id: actionForward
+                                   iconName: "go-next"
+                                   text: i18n.tr("Forward")
+                                   onTriggered:  {
+                                       webview.goForward()
+                                   }
+                                    },
+
+                                  Action {
+                                   id: actionRestore
+                                   iconSource: "icon.svg"
+                                                       iconName: "icon"
+                                                       onTriggered: {
+                                                           webview.url = 'https://www.messenger.com/'
+                                                       }
+                                                       text: qsTr("Messenger")
+                                                   },
+                                   Action {
+                                       id: actionBack
+                                       iconName: "go-previous"
+                                       text: i18n.tr("Back")
+                                       onTriggered: {
+                                           webview.goBack()
+                                       }
+                                   }
+                           ]
+                       }
 
             trailingActionBar {
-                                                  numberOfSlots: 2
+                                                  numberOfSlots: 3
                                                   actions: [
+                                                      Action {
+                                                          id: actionfacebook
+                                                          iconName: "facebook-symbolic"
+                                                          onTriggered: {
+                                                                                 webview.url = 'https://www.facebook.com/'
+                                                                             }
+                                                           },
                                                       Action {
                                                           id: actionPhoneone
                                                           iconName: "phone-smartphone-symbolic"
                                                           text: i18n.tr("Phone view")
-                                                          onTriggered:  webview.reload()
-                                                           },
-                                                      Action {
-                                                          id: actionPhone
-                                                          iconName: "phone-smartphone-symbolic"
-                                                          text: i18n.tr("Phone view")
-                                                          onTriggered:  webview.reload()
+
                                                            },
                                                       Action {
                                                           id: actionTablet
