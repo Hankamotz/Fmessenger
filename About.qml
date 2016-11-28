@@ -33,16 +33,22 @@ import Ubuntu.Components 1.3
                        }
         }
 
+        UbuntuShape {
+                                id: appImage
+                                anchors{
 
-        Image {
-                        id: appImage
-                        source: "fmessenger.png"
-                        anchors{
+                                    horizontalCenter: parent.horizontalCenter
+                                    top: pageHeader.bottom
+                                    topMargin: units.gu(6)
+                            }
+                                width: units.gu(15)
+                                height: units.gu(15)
+                                source: Image {
+                                    source: Qt.resolvedUrl("fmessenger.png")
+                                }
 
-                            horizontalCenter: parent.horizontalCenter
-                            top: pageHeader.bottom
-                            topMargin: units.gu(6)
-                    }
+
+
         Label {
             anchors {
                 horizontalCenter: parent.horizontalCenter
@@ -51,7 +57,8 @@ import Ubuntu.Components 1.3
             }
             id: label
             objectName: "label"
-            text: i18n.tr("Fmessenger v.0.8.2")
+            text: i18n.tr("Fmessenger v.0.8.3")
+            fontSize: "large"
         }
         Label {
             anchors {
@@ -81,7 +88,9 @@ import Ubuntu.Components 1.3
             }
             id: label3
             objectName: "label"
-            text: i18n.tr("Andima Landaluze <andimalo@hotmail.es>")
+            text: i18n.tr("Andima Landaluze  <a href=\"mailto://andimalo@hotmail.es\">andimalo@hotmail.es</a>")
+            fontSize: "small"
+            onLinkActivated: Qt.openUrlExternally(link)
 
         }
         Label {
@@ -93,34 +102,36 @@ import Ubuntu.Components 1.3
             id: label4
             objectName: "label"
             text: i18n.tr("This app uses")
+            fontSize: "small"
 
         }
         Label {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: label4.bottom
-                topMargin: units.gu(3)
+                topMargin: units.gu(1)
             }
             id: label5
             objectName: "label"
             text: i18n.tr("a modified version of Messenger style")
+            fontSize: "small"
 
         }
         Label {
             anchors {
                 horizontalCenter: parent.horizontalCenter
                 top: label5.bottom
-                topMargin: units.gu(3)
+                topMargin: units.gu(1)
             }
             id: label6
             objectName: "label"
-            text: i18n.tr("made by Krzychu (CC-BY-NC-SA)")
+            text: i18n.tr("made by <a href=\"https://userstyles.org/styles/112567/facebook-messanger-nice-tidy-and-more-responsive\">Krzychu</a> (CC-BY-NC-SA)")
+            fontSize: "small"
 
         }
 
         }
     }
-
 
 
 
