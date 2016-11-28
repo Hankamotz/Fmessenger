@@ -15,6 +15,7 @@ import com.canonical.Oxide 1.0 as Oxide
             StyleHints {
                 foregroundColor: "#FFFFFF"
                 backgroundColor: "#0084FF"
+                dividerColor: "transparent"
 
             }
 
@@ -50,36 +51,34 @@ import com.canonical.Oxide 1.0 as Oxide
                                    }
                            ]
                        }
+
             trailingActionBar {
-                                                  numberOfSlots: 3
+                                                  numberOfSlots: 2
                                                   actions: [
                                                       Action {
-                                                          id: actionfacebook
-                                                          iconName: "facebook-symbolic"
-                                                          onTriggered: {
-                                                                                 webview.url = 'https://www.facebook.com/'
-                                                                             }
-                                                           },
-                                                      Action {
-                                                          id: actionDesktopone
+                                                          id: actionDesktop
                                                           iconName: "computer-symbolic"
                                                           text: i18n.tr("Desktop view")
 
                                                            },
                                                       Action {
-                                                          id: actionPhone
-                                                          iconName: "phone-smartphone-symbolic"
-                                                          text: i18n.tr("Phone view")
+                                                          id: actionMain
+                                                          iconName: "go-previous"
+                                                          text: i18n.tr("Device selection")
                                                           onTriggered: {
-                                                                            onClicked: mainPageStack.pop(pageDesktop)
-                                                                        }
+                                                                                  onClicked: mainPageStack.pop(pageDesktop)
+                                                                              }
+
                                                            },
                                                       Action {
-                                                          id: actionAbout
-                                                          iconName: "info"
-                                                          text: i18n.tr("About")
-                                                          onTriggered:  mainPageStack.push(Qt.resolvedUrl("About.qml"))
+                                                          id: actionfacebook
+                                                          iconName: "facebook-symbolic"
+                                                          text: i18n.tr("Go to facebook")
+                                                          onTriggered: {
+                                                                                 webview.url = 'https://www.facebook.com/'
+                                                                             }
                                                            }
+
 
 
 
@@ -121,7 +120,7 @@ import com.canonical.Oxide 1.0 as Oxide
                     preferences.appCacheEnabled: true
                     preferences.javascriptCanAccessClipboard: true
                     filePicker: filePickerLoader.item
- 
+
                     function navigationRequestedDelegate(request) {
                                     var url = request.url.toString();
                                     var pattern = myPattern.split(',');
