@@ -17,6 +17,15 @@ This app uses a modified version of Facebook Messenger style (https://userstyles
 
 =====================CHANGELOT==========================
 
+--------------------VERSION 0.8.3 ----------------------
+
+-Moved text area position in phone view
+-Updated about page
+-Added link to appstore
+-Added devices selection menu
+-Added translations: Basque and Spanish
+
+
 --------------------VERSION 0.8.2 ----------------------
 
 -Restored filepicker, now can search and share images, videos ando other files
