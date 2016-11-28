@@ -248,6 +248,11 @@
         "",
         "._hh7 a {",
         "  font-size: 34pt !important;", 
+        "}"
+//text atribute
+        "",
+        " ._1mf {",
+        "  white-space: normal !important;",
         "}",
 //emoji
         "",
