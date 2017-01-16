@@ -162,6 +162,14 @@ import com.canonical.Oxide 1.0 as Oxide
                                     asynchronous: true
                                 }
                             }
+                  ThinProgressBar {
+                   webview: webview
+                   anchors {
+                       left: parent.left
+                       right: parent.right
+                       top: pageHeader.bottom
+                   }
+               }
         Connections {
                 target: UriHandler
                 onOpened: {
